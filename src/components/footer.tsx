@@ -18,6 +18,9 @@ export function Footer() {
               variant="h6"
               color={"white"}
               className="flex items-center gap-1"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
             >
               <Image
                 width={50}
@@ -29,24 +32,39 @@ export function Footer() {
                 <Typography
                   className="font-semibold text-[14px]"
                   color={"white"}
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
                   Creatify
                 </Typography>
                 <Typography
                   className="font-semibold text-[14px]"
                   color={"white"}
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
                   Technologies
                 </Typography>
               </div>
             </Typography>
-            <Typography color="white" className="mb-12 font-normal">
+            <Typography
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              color="white"
+              className="mb-12 font-normal"
+            >
               The reward for getting on the stage is fame.
             </Typography>
             <ul className="flex flex-wrap items-center justify-center md:justify-start">
               {LINKS.map((link, idx) => (
                 <li key={link}>
                   <Typography
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
                     as="a"
                     href="#"
                     color="white"
@@ -61,13 +79,23 @@ export function Footer() {
             </ul>
           </div>
           <div className="mt-8 w-full md:mt-0 md:w-auto">
-            <Typography variant="h6" color="white" className="mb-3">
+            <Typography
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="h6"
+              color="white"
+              className="mb-3"
+            >
               Get the app
             </Typography>
             <div className="flex flex-col gap-2">
               <Button
                 color="white"
                 className="flex items-center justify-center"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
               >
                 <Image
                   width={256}
@@ -81,6 +109,9 @@ export function Footer() {
               <Button
                 color="white"
                 className="flex items-center justify-center"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
               >
                 <Image
                   width={256}
@@ -98,12 +129,14 @@ export function Footer() {
           <Typography
             color="white"
             className="text-center font-normal opacity-75"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
-            &copy; {CURRENT_YEAR} 
+            &copy; {CURRENT_YEAR}
             <a href="https://www.material-tailwind.com" target="_blank">
               Creatify Technologies,
             </a>{" "}
-            
             <a href="https://www.creative-tim.com" target="_blank">
               All Rights Reserved
             </a>
@@ -111,13 +144,31 @@ export function Footer() {
           </Typography>
 
           <div className="flex gap-2">
-            <IconButton variant="text" color="white">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+              color="white"
+            >
               <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+              color="white"
+            >
               <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
             </IconButton>
-            <IconButton variant="text" color="white">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+              color="white"
+            >
               <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
             </IconButton>
           </div>
