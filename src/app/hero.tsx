@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 import { ReactTyped } from "react-typed";
 
-
 function Hero() {
   return (
     <div className="relative min-h-screen w-full">
@@ -19,9 +18,10 @@ function Hero() {
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
             >
-              At Creatify Technologies, we are passionate about transforming ideas
-              into cutting-edge software solutions. At Creatify Technologies, we
-              provide <ReactTyped
+              At Creatify Technologies, we are passionate about transforming
+              ideas into cutting-edge software solutions. At Creatify
+              Technologies, we provide{" "}
+              <ReactTyped
                 className="text-red-700 font-bold"
                 strings={[
                   "Modern Websites",
@@ -31,24 +31,15 @@ function Hero() {
                 typeSpeed={40}
                 backSpeed={50}
                 loop={true}
-              />.|
+              />
+              .|
             </Typography>
-            {/* <Typography className="mb-4" color="white" variant="h6">
-              Get the app
-            </Typography> */}
             <div className="flex flex-col gap-2 md:mb-2 md:w-10/12 md:flex-row">
               <Button
                 size="lg"
                 color="white"
                 className="flex justify-center items-center gap-3"
               >
-                {/* <Image
-                  width={256}
-                  height={256}
-                  src="/logos/logo-apple.png"
-                  alt="metamask"
-                  className="w-6 h-6"
-                /> */}
                 let's Connect
               </Button>
               {/* <Button
@@ -79,7 +70,7 @@ function Hero() {
       <div className="mx-8 lg:mx-16 -mt-24 rounded-xl bg-white p-5 md:p-14 shadow-md">
         <div>
           <Typography variant="h3" color="blue-gray" className="mb-3">
-          Empowering your vision—one innovative solution at a time.
+            Empowering your vision—one innovative solution at a time.
           </Typography>
           <Typography
             variant="paragraph"
