@@ -6,7 +6,19 @@ const config: Config = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      animation: {
+        'gradient-move': 'gradient-move 5s infinite linear',
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      colors: {
+        'gray-700': '#374151', // or your preferred shade
+      },
+    },
+  },
   plugins: [],
 });
 
