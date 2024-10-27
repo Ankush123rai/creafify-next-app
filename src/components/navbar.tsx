@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -23,22 +23,25 @@ function NavItem({ children, href }: NavItemProps) {
         target={href ? "_blank" : "_self"}
         variant="small"
         className="font-medium"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
       >
         {children}
       </Typography>
     </li>
   );
-} 
+}
 
 export function Navbar() {
-  const [open, setOpen] = React.useState(false);
-  const [isScrolling, setIsScrolling] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   function handleOpen() {
     setOpen((cur) => !cur);
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpen(false)
@@ -66,6 +69,9 @@ export function Navbar() {
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0"
+      placeholder=""
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
@@ -75,6 +81,9 @@ export function Navbar() {
           variant="h6"
           color={isScrolling ? "gray" : "white"}
           className="flex items-center gap-1"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           <Image
             width={50}
@@ -83,10 +92,22 @@ export function Navbar() {
             alt="logo"
           />
           <div className="flex flex-col">
-            <Typography className="font-semibold text-[14px]"  color={isScrolling ? "gray" : "white"}>
+            <Typography
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              className="font-semibold text-[14px]"
+              color={isScrolling ? "gray" : "white"}
+            >
               Creatify
             </Typography>
-            <Typography className="font-semibold text-[14px]" color={isScrolling ? "gray" : "white"}>
+            <Typography
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              className="font-semibold text-[14px]"
+              color={isScrolling ? "gray" : "white"}
+            >
               Technologies
             </Typography>
           </div>
@@ -99,15 +120,16 @@ export function Navbar() {
           <NavItem>Home</NavItem>
           <NavItem>About Us</NavItem>
           <NavItem>Contact Us</NavItem>
-          <NavItem href="">
-            Projects
-          </NavItem>
+          <NavItem href="">Projects</NavItem>
         </ul>
         <div className="hidden gap-2 lg:flex lg:items-center">
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
@@ -115,6 +137,9 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
@@ -122,11 +147,16 @@ export function Navbar() {
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
+            <Button placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}} color={isScrolling ? "gray" : "white"} size="sm">
               Join Us
             </Button>
           </a>
@@ -136,6 +166,9 @@ export function Navbar() {
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
@@ -150,22 +183,48 @@ export function Navbar() {
             <NavItem>Home</NavItem>
             <NavItem>About Us</NavItem>
             <NavItem>Contact Us</NavItem>
-            <NavItem href="">
-              Projects
-            </NavItem>
+            <NavItem href="">Projects</NavItem>
           </ul>
           <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+              color="gray"
+              size="sm"
+            >
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+              color="gray"
+              size="sm"
+            >
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              variant="text"
+              color="gray"
+              size="sm"
+            >
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             <a href="" target="_blank">
-              <Button color="gray" size="sm" className="ml-auto">
+              <Button
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+                color="gray"
+                size="sm"
+                className="ml-auto"
+              >
                 Join Us
               </Button>
             </a>
