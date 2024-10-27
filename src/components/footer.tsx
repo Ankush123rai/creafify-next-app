@@ -23,38 +23,19 @@ export function Footer() {
               onPointerLeaveCapture={() => {}}
             >
               <Image
-                width={50}
-                height={30}
-                src="/logos/creatifyLogo.png"
-                alt="logo"
-              />
-              <div className="flex flex-col">
-                <Typography
-                  className="font-semibold text-[14px]"
-                  color={"white"}
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-                >
-                  Creatify
-                </Typography>
-                <Typography
-                  className="font-semibold text-[14px]"
-                  color={"white"}
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-                >
-                  Technologies
-                </Typography>
-              </div>
+            width={130}
+            height={100}
+            src="/logos/logo.png"
+            alt="logo"
+            className="rounded-md"
+          />
             </Typography>
             <Typography
               placeholder=""
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
               color="white"
-              className="mb-12 font-normal"
+              className="mb-12 mt-9 font-normal"
             >
               The reward for getting on the stage is fame.
             </Typography>

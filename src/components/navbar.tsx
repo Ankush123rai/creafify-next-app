@@ -86,31 +86,12 @@ export function Navbar() {
           onPointerLeaveCapture={() => {}}
         >
           <Image
-            width={50}
-            height={30}
-            src="/logos/creatifyLogo.png"
+            width={130}
+            height={100}
+            src="/logos/logo.png"
             alt="logo"
+            className="rounded-md"
           />
-          <div className="flex flex-col">
-            <Typography
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              className="font-semibold text-[14px]"
-              color={isScrolling ? "gray" : "white"}
-            >
-              Creatify
-            </Typography>
-            <Typography
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-              className="font-semibold text-[14px]"
-              color={isScrolling ? "gray" : "white"}
-            >
-              Technologies
-            </Typography>
-          </div>
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${

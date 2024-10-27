@@ -27,11 +27,11 @@ function Hero() {
               variant="lead"
               className="mb-7 !text-white md:pr-16 xl:pr-28"
             >
-              At Creatify Technologies, we are passionate about transforming
+              At <strong className="text-red-500">Creatify Technologies</strong>, we are passionate about transforming
               ideas into cutting-edge software solutions. At Creatify
               Technologies, we provide{" "}
               <ReactTyped
-                className="text-red-700 font-bold"
+                className="text-red-500 font-bold"
                 strings={[
                   "Modern Websites",
                   "CRM Development",
