@@ -14,14 +14,15 @@ export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
       onPointerLeaveCapture={() => {}}
       color="transparent"
       shadow={false}
+      className="cursor-pointer bg-gradient-to-r from-gray-100 to-white p-5 transition-transform hover:scale-95 hover:bg-gradient-to-r hover:from-gray-300 hover:to-blue-gray-500 hover:text-white shadow-lg rounded-lg"
     >
       <CardBody
         placeholder=""
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
-        className="grid justify-start"
+        className="flex flex-col items-start"
       >
-        <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
+        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600 text-white shadow-md">
           <Icon className="h-6 w-6" />
         </div>
         <Typography
@@ -29,8 +30,7 @@ export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
           variant="h5"
-          color="blue-gray"
-          className="mb-2"
+          className="mb-2 text-blue-900 font-semibold"
         >
           {title}
         </Typography>
@@ -38,7 +38,7 @@ export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
-          className=" font-normal !text-gray-500"
+          className="text-black font-normal leading-relaxed"
         >
           {children}
         </Typography>

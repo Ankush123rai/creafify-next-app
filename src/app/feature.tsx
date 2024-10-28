@@ -4,38 +4,38 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 import {
-  CursorArrowRaysIcon,
-  HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
+  CpuChipIcon,
+  GlobeAltIcon,
+  DevicePhoneMobileIcon,
+  PencilSquareIcon,
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "../components/feature-card";
 
 const FEATURES = [
   {
-    icon: CursorArrowRaysIcon,
-    title: "Expert Instructors",
+    icon: CpuChipIcon,
+    title: "AI Services",
     children:
-      "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+      "Leverage our advanced AI solutions to transform data into valuable insights, automate processes, and enhance decision-making.",
   },
   {
-    icon: HeartIcon,
-    title: "Interactive Learning",
+    icon: GlobeAltIcon,
+    title: "Website Development",
     children:
-      "Engage with interactive quizzes, hands-on exercises, and discussion forums to reinforce your understanding and connect.",
+      "Build responsive, high-performance websites tailored to your business needs, ensuring an engaging online presence.",
   },
   {
-    icon: LockClosedIcon,
-    title: "Achievement Unlocked",
+    icon: DevicePhoneMobileIcon,
+    title: "App Development",
     children:
-      "Earn certificates and badges as you complete courses, showcasing your newfound skills to the world.",
+      "Create intuitive, user-friendly mobile applications designed to provide seamless user experiences across platforms.",
   },
   {
-    icon: LightBulbIcon,
-    title: "Personalized Progress Tracking",
+    icon: PencilSquareIcon,
+    title: "UI/UX Design",
     children:
-      "Stay on top of your learning journey with progress tracking and personalized recommendations to keep you motivated.",
+      "Design visually appealing, user-centered interfaces that enhance usability, accessibility, and brand consistency.",
   },
 ];
 
@@ -43,17 +43,17 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography  placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}} color="blue-gray" className="mb-2 font-bold uppercase">
-          Your Learning App
-        </Typography>
-        <Typography  placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}} variant="h1" color="blue-gray" className="mb-4">
-          Diverse Learning Resources
-        </Typography>
         <Typography
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+          variant="h1"
+          color="blue-gray"
+          className="mb-4"
+        >
+          Features
+        </Typography>
+        {/* <Typography
           variant="lead"
           placeholder=""
           onPointerEnterCapture={() => {}}
@@ -63,7 +63,7 @@ export function Features() {
           Access your learning materials on the go. Whether you&apos;re
           commuting, waiting for a friend, or just have a few minutes to spare,
           our app fits seamlessly into your busy life.
-        </Typography>
+        </Typography> */}
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
         {FEATURES.map((props, idx) => (
