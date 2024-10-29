@@ -17,14 +17,14 @@ const TESTIMONIALS = [
     feedback:
       "It understood my unique needs and delivered a tailored solution promptly. Their customer support is top-notch, and I appreciate their commitment.",
     client: "Mary Joshiash",
-    title: "MARKETING @ APPLE INC.",
+    title: "MARKETING @ MedX Solutions.",
     img: "/image/avatar2.jpg",
   },
   {
     feedback:
       "They not only met but exceeded our expectations. Their innovative approach and technical proficiency have been instrumental in our success.",
     client: "Marcell Glock",
-    title: "CFO @ APPLE INC..",
+    title: "CFO @ MedX Solutions",
     img: "/image/avatar3.jpg",
   },
 ];

@@ -64,6 +64,11 @@ function ContactForm() {
                 <p className="text-gray-400">
                 UNO L-105, Lakeshore green, Lodha palava , Dombivali, Mumbai, India
                 </p>
+                {" "}<br/>
+                <p className="text-gray-400">
+                267, Washington Street , Near new port station, New Jersey  NJ 08540
+                USA
+                </p>
               </div>
             </div>
             <div className="flex my-4 w-2/3 lg:w-full">

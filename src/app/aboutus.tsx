@@ -6,21 +6,23 @@ const teamMembers = [
     name: 'Raju Bhautkar',
     designation: 'Co-founder',
     image: '/image/raju-b.jpg', 
-    linkedin: '#', 
+    linkedin: 'https://www.linkedin.com/in/bhautkar/', 
     twitter: '#', 
   },
   {
     name: 'Sahil Shiekh',
     designation: 'Co-founder',
+    title:"full-stack developer",
     image: '/image/sahil.jpg',
-    linkedin: '#',
+    linkedin: 'https://www.linkedin.com/in/sahilsheikh-iicc/',
     twitter: '#',
   },
   {
     name: 'Ankush Rai',
     designation: 'Co-founder',
+    title:"full-stack developer",
     image: '/image/ankush.jpg',
-    linkedin: '#',
+    linkedin: 'https://www.linkedin.com/in/ankush-rai-7733871b5/',
     twitter: '#',
   },
 ];
@@ -67,7 +69,8 @@ export default function AboutUs() {
 
                 <div className="px-6 py-4">
                   <h3 className="font-semibold text-lg">{member.name}</h3>
-                  <p className="text-gray-600">{member.designation}</p>
+                  <p className="text-blue-900">{member.designation}</p>
+                  <p className="text-gray-600 text-sm">{member.title}</p>
                 </div>
               </div>
             ))}
