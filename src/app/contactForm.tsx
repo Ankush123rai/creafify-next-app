@@ -62,7 +62,7 @@ function ContactForm() {
               <div className="flex flex-col">
                 <h2 className="text-2xl">Main Office</h2>
                 <p className="text-gray-400">
-                  Ambazari Road, IT Park, Nagpur - 440022
+                UNO L-105, Lakeshore green, Lodha palava , Dombivali, Mumbai, India
                 </p>
               </div>
             </div>
