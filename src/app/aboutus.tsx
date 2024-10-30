@@ -21,7 +21,7 @@ const teamMembers = [
     name: 'Ankush Rai',
     designation: 'Co-founder',
     title:"full-stack developer",
-    image: '/image/ankush.jpg',
+    image: '/image/ankush.png',
     linkedin: 'https://www.linkedin.com/in/ankush-rai-7733871b5/',
     twitter: '#',
   },
@@ -58,7 +58,7 @@ export default function AboutUs() {
                 <div className="relative h-64 w-full">
                   <img className="w-full h-full object-cover" src={member.image} alt={member.name} />
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 ease-in-out">
-                    <a href={member.linkedin} className="text-white p-2 bg-indigo-600 rounded-full hover:bg-indigo-800 mx-1">
+                    <a href={member.linkedin} target='blank' className="text-white p-2 bg-indigo-600 rounded-full hover:bg-indigo-800 mx-1">
                       <FaLinkedin className="h-5 w-5" />
                     </a>
                     <a href={member.twitter} className="text-white p-2 bg-indigo-600 rounded-full hover:bg-indigo-800 mx-1">

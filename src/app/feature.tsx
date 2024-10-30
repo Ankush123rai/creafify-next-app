@@ -2,15 +2,14 @@
 
 import React from "react";
 import { Typography } from "@material-tailwind/react";
-
 import {
   CpuChipIcon,
   GlobeAltIcon,
   DevicePhoneMobileIcon,
   PencilSquareIcon,
 } from "@heroicons/react/24/solid";
-
 import FeatureCard from "../components/feature-card";
+import { motion } from "framer-motion";
 
 const FEATURES = [
   {
@@ -39,10 +38,22 @@ const FEATURES = [
   },
 ];
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export function Features() {
   return (
     <section className="py-28 px-4">
-      <div className="container mx-auto mb-20 text-center">
+      <motion.div
+        className="container mx-auto mb-20 text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.6 }}
+        variants={fadeInUp}
+      >
         <Typography
           placeholder=""
           onPointerEnterCapture={() => {}}
@@ -53,24 +64,29 @@ export function Features() {
         >
           Features
         </Typography>
-        {/* <Typography
-          variant="lead"
-          placeholder=""
-          onPointerEnterCapture={() => {}}
-          onPointerLeaveCapture={() => {}}
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
-        >
-          Access your learning materials on the go. Whether you&apos;re
-          commuting, waiting for a friend, or just have a few minutes to spare,
-          our app fits seamlessly into your busy life.
-        </Typography> */}
-      </div>
-      <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
+      </motion.div>
+
+      <motion.div
+        className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
         {FEATURES.map((props, idx) => (
-          <FeatureCard key={idx} {...props} />
+          <motion.div key={idx} variants={fadeInUp}>
+            <FeatureCard {...props} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
+
 export default Features;

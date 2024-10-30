@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  scroll-behavior: smooth;
+}
+.gradient-move {
+  animation: gradient-move 5s infinite;
+}
+
 @keyframes gradient-move {
     0% {
       background-position: 0% 50%;
@@ -10,4 +17,6 @@
       background-position: 100% 50%;
     }
   }
+
+  
   

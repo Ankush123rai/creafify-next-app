@@ -142,7 +142,7 @@ export function Navbar() {
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
-          <a href="" target="_blank">
+          <a href="#contact">
             <Button placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}} color={isScrolling ? "gray" : "white"} size="sm">

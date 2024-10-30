@@ -8,13 +8,6 @@ import TestimonialCard from "../components/testimonial-card";
 const TESTIMONIALS = [
   {
     feedback:
-      "It has been a game-changer for my business. Their dedication, expertise, and attention to detail have truly set them apart. I highly recommend their services!",
-    client: "Jessica Devis",
-    title: "CEO @ MARKETING DIGITAL LTD.",
-    img: "/image/avatar1.jpg",
-  },
-  {
-    feedback:
       "It understood my unique needs and delivered a tailored solution promptly. Their customer support is top-notch, and I appreciate their commitment.",
     client: "Mary Joshiash",
     title: "MARKETING @ MedX Solutions.",
@@ -23,49 +16,76 @@ const TESTIMONIALS = [
   {
     feedback:
       "They not only met but exceeded our expectations. Their innovative approach and technical proficiency have been instrumental in our success.",
-    client: "Marcell Glock",
+    client: "Jacob Jones",
     title: "CFO @ MedX Solutions",
-    img: "/image/avatar3.jpg",
+    img: "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png",
+  },
+  {
+    feedback:
+      "I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.",
+    client: "Emily Johnson",
+    title: "Graphic Designer",
+    img: "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png",
   },
 ];
 
 export function Testimonials() {
   return (
-    <section className="px-10 !py-20">
-      <div className="container mx-auto">
-        <div className="mb-20 flex w-full flex-col items-center">
-          <div className="mb-10 flex h-12 w-12 items-center justify-center rounded-lg bg-gray-900 text-white ">
-            <UserIcon className="h-6 w-6" />
+    <section className="relative py-12 bg-gray-50 sm:py-16 lg:py-20 overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-20"
+      >
+        <source src="/videos/bg-video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 z-10">
+        <div className="flex flex-col items-center">
+          <div className="text-center">
+            <p className="text-lg font-medium text-gray-600 font-pj">
+              150+ people have said how good Rareblocks
+            </p>
+            <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+              Our happy clients say about us
+            </h2>
           </div>
-          <Typography
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-            variant="h2"
-            color="blue-gray"
-            className="mb-2"
-          >
-            What Clients Say
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mb-10 max-w-3xl text-center !text-gray-600"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
-          >
-            Discover what our valued clients have to say about their experiences
-            with our services. We take pride in delivering exceptional results
-            and fostering lasting partnerships.
-          </Typography>
-        </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-3 lg:px-20">
-          {TESTIMONIALS.map((props, key) => (
-            <TestimonialCard key={key} {...props} />
-          ))}
+
+          <div className="mt-8 text-center md:mt-16 md:order-3">
+            <a
+              href=""
+              title=""
+              className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
+            >
+              Check all 150+ reviews
+            </a>
+          </div>
+
+          <div className="relative mt-10 md:mt-24 md:order-2">
+            <div className="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
+              <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"></div>
+            </div>
+
+            <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+              {TESTIMONIALS.map((item, i) => (
+                <TestimonialCard
+                  key={i}
+                  feedback={item.feedback}
+                  client={item.client}
+                  title={item.title}
+                  img={item.img}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
 export default Testimonials;

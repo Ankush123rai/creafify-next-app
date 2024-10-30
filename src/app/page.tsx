@@ -10,6 +10,7 @@ import Testimonials from "./testimonials";
 import Faqs from "./faqs";
 import ContactForm from "./contactForm";
 import Aboutus from "./aboutus";
+import Projects from "./projects/page";
 
 export default function Campaign() {
   return (
@@ -22,9 +23,10 @@ export default function Campaign() {
       </div>
       
       <Testimonials />
+      <Projects/>
       <div id="contact">
         <ContactForm />
-      </div>
+      </div>   
       <Footer />
     </>
   );
