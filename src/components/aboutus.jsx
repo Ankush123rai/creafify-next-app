@@ -15,7 +15,7 @@ const teamMembers = [
   {
     name: 'Sahil Shiekh',
     designation: 'Co-founder',
-    title:"full-stack developer",
+    // title:"full-stack developer",
     image: image2,
     linkedin: 'https://www.linkedin.com/in/sahilsheikh-iicc/',
     twitter: '#',
@@ -23,7 +23,7 @@ const teamMembers = [
   {
     name: 'Ankush Rai',
     designation: 'Co-founder',
-    title:"full-stack developer",
+    // title:"full-stack developer",
     image: image3,
     linkedin: 'https://www.linkedin.com/in/ankush-rai-7733871b5/',
     twitter: '#',
