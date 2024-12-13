@@ -1,5 +1,5 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
-import AboutUs from "./components/aboutus";
+// import AboutUs from "./components/aboutus";
 import Benefits from "./components/Benefits";
 import ContactForm from "./components/contactForm";
 import Footer from "./components/Footer";
@@ -17,7 +17,7 @@ const App = () => {
         <HeroSection/>
         <Hero />
         <Benefits />
-        <AboutUs/>
+        {/* <AboutUs/> */}
         <Testimonials/>
         <Projects/>
         <ContactForm/>

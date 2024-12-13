@@ -42,11 +42,11 @@ export const navigation = [
     title: "Features",
     url: "#features",
   },
-  {
-    id: "1",
-    title: "About Us",
-    url: "#about-us",
-  },
+  // {
+  //   id: "1",
+  //   title: "About Us",
+  //   url: "#about-us",
+  // },
   {
     id: "2",
     title: "Projects",
