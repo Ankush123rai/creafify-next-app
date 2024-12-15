@@ -1,8 +1,7 @@
 // import { BriefcaseIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/solid';
 import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import image1 from '../assets/image/raju-b.jpg';
-import image2 from '../assets/image/sahil.jpg';
-import image3 from '../assets/image/ankush.png';
+import image2 from '../assets/image/y_b.jpg';
 
 const teamMembers = [
   {
@@ -13,19 +12,10 @@ const teamMembers = [
     twitter: '#', 
   },
   {
-    name: 'Sahil Shiekh',
+    name: 'Yashwantini Bhautkar',
     designation: 'Co-founder',
-    // title:"full-stack developer",
     image: image2,
     linkedin: 'https://www.linkedin.com/in/sahilsheikh-iicc/',
-    twitter: '#',
-  },
-  {
-    name: 'Ankush Rai',
-    designation: 'Co-founder',
-    // title:"full-stack developer",
-    image: image3,
-    linkedin: 'https://www.linkedin.com/in/ankush-rai-7733871b5/',
     twitter: '#',
   },
 ];
