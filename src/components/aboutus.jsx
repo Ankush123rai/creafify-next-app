@@ -15,7 +15,7 @@ const teamMembers = [
     name: 'Yashwantini Bhautkar',
     designation: 'Co-founder',
     image: image2,
-    linkedin: 'https://www.linkedin.com/in/sahilsheikh-iicc/',
+    linkedin: '',
     twitter: '#',
   },
 ];
